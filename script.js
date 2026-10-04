@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const colleges = {
 
-        "abc institute of technology": {
+        "drk institute of technology": {
             name: "DRK Institute of Technology",
             location: "Hyderabad, Telangana",
             established: "2004",
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
             risk: "Review"
         },
 
-        "abc": {
+        "drk": {
             name: "DRK Institute of Technology",
             location: "Hyderabad, Telangana",
             established: "2004",
