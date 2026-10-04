@@ -120,7 +120,8 @@ document.addEventListener("DOMContentLoaded", function () {
     ----------------------------------------------------- */
 
     function loadCollege(college) {
-
+       document.querySelector(".dashboard").style.display = "block";
+       
         const institutionName =
             document.querySelector(".institution-header h2");
 
