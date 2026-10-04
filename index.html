@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIP | Institution Intelligence Platform</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+        <div class="logo">
+            <div class="logo-icon">I</div>
+            <div>
+                <h2>IIP</h2>
+                <span>Institution Intelligence</span>
+            </div>
+        </div>
+
+        <nav>
+            <a href="#overview">Overview</a>
+            <a href="#admissions">Admissions</a>
+            <a href="#placement">Placement</a>
+            <a href="#accreditation">Accreditation</a>
+            <a href="#risk">Risk</a>
+        </nav>
+
+        <button class="header-btn">Executive Report</button>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                <span class="live-dot"></span>
+                INSTITUTION INTELLIGENCE PLATFORM
+            </div>
+
+            <h1>
+                One Search.
+                <span>One Profile.</span>
+                One Executive View.
+            </h1>
+
+            <p>
+                Research colleges, verify institutional data, analyse
+                five-year performance, identify risks and evaluate
+                partnership opportunities from one intelligent platform.
+            </p>
+
+            <!-- SEARCH -->
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="collegeSearch"
+                    placeholder="Search College Name, AISHE Code, University or City..."
+                >
+
+                <button id="searchBtn">
+                    🔍 Search
+                </button>
+
+            </div>
+
+            <div class="search-example">
+                Try demo:
+                <button onclick="loadDemo()">DRK Institute of Technology</button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MAIN DASHBOARD ================= -->
+    <main id="overview" class="dashboard">
+
+        <!-- Demo notice -->
+        <div class="demo-banner">
+            <strong>DEMO DATA</strong>
+            This prototype uses sample institutional data.
+            Real government, university and institutional sources will be connected later.
+        </div>
+
+
+        <!-- ================= INSTITUTION HEADER ================= -->
+        <section class="institution-header">
+
+            <div>
+                <div class="verified-label">
+                    ✓ PROFILE LOADED
+                </div>
+
+                <h2 id="institutionName">
+                    DRK Institute of Technology
+                </h2>
+
+                <p id="institutionLocation">
+                    Hyderabad, Telangana
+                </p>
+            </div>
+
+            <div class="risk-badge">
+                🟡 REVIEW
+                <small>Overall Risk</small>
+            </div>
+
+        </section>
+
+
+        <!-- ================= EXECUTIVE SNAPSHOT ================= -->
+        <section class="section">
+
+            <div class="section-title">
+                <div>
+                    <span>01</span>
+                    <h2>Executive Snapshot</h2>
+                </div>
+
+                <p>Key institutional indicators at a glance</p>
+            </div>
+
+
+            <div class="metric-grid">
+
+                <div class="metric-card">
+                    <span>Current Students</span>
+                    <strong>3,120</strong>
+                    <small>of 4,800 capacity</small>
+                </div>
+
+                <div class="metric-card">
+                    <span>New Admissions</span>
+                    <strong>780</strong>
+                    <small>Last academic year</small>
+                </div>
+
+                <div class="metric-card">
+                    <span>Capacity Utilisation</span>
+                    <strong>65%</strong>
+                    <small class="positive">↑ 8% vs 5-year average</small>
+                </div>
+
+                <div class="metric-card">
+                    <span>Placement</span>
+                    <strong>72%</strong>
+                    <small>Latest available data</small>
+                </div>
+
+                <div class="metric-card">
+                    <span>Average Package</span>
+                    <strong>₹5.2L</strong>
+                    <small>Reported placement data</small>
+                </div>
+
+                <div class="metric-card">
+                    <span>Available Capacity</span>
+                    <strong>1,680</strong>
+                    <small>Potential growth headroom</small>
+                </div>
+
+            </div>
+
+
+            <!-- Institution details -->
+            <div class="info-grid">
+
+                <div class="info-card">
+
+                    <h3>Institution Details</h3>
+
+                    <div class="info-row">
+                        <span>Established</span>
+                        <strong>2004</strong>
+                    </div>
+
+                    <div class="info-row">
+                        <span>Ownership</span>
+                        <strong>Private / Trust</strong>
+                    </div>
+
+                    <div class="info-row">
+                        <span>University</span>
+                        <strong>XYZ University</strong>
+                    </div>
+
+                    <div class="info-row">
+                        <span>AISHE Code</span>
+                        <strong>XXXXXX</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <h3>Regulatory Status</h3>
+
+                    <div class="verification-row">
+                        <span>UGC Recognition</span>
+                        <b class="verified">✓ Verified</b>
+                    </div>
+
+                    <div class="verification-row">
+                        <span>AICTE Approval</span>
+                        <b class="verified">✓ Verified</b>
+                    </div>
+
+                    <div class="verification-row">
+                        <span>NAAC</span>
+                        <b>B++</b>
+                    </div>
+
+                    <div class="verification-row">
+                        <span>NIRF</span>
+                        <b>Not Ranked</b>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ADMISSION INTELLIGENCE ================= -->
+        <section id="admissions" class="section">
+
+            <div class="section-title">
+                <div>
+                    <span>02</span>
+                    <h2>Admission Intelligence</h2>
+                </div>
+
+                <p>Five-year admission and utilisation analysis</p>
+            </div>
+
+
+            <div class="chart-card">
+
+                <div class="chart-header">
+                    <div>
+                        <h3>5-Year Admission Trend</h3>
+                        <p>University-verified admissions vs approved intake</p>
+                    </div>
+
+                    <div class="trend">
+                        ↗ 18% Growth
+                    </div>
+                </div>
+
+
+                <div class="chart">
+
+                    <div class="bar-item">
+                        <span>2021</span>
+                        <div class="bar">
+                            <i style="height:50%"></i>
+                        </div>
+                        <strong>50%</strong>
+                    </div>
+
+                    <div class="bar-item">
+                        <span>2022</span>
+                        <div class="bar">
+                            <i style="height:56%"></i>
+                        </div>
+                        <strong>56%</strong>
+                    </div>
+
+                    <div class="bar-item">
+                        <span>2023</span>
+                        <div class="bar">
+                            <i style="height:64%"></i>
+                        </div>
+                        <strong>64%</strong>
+                    </div>
+
+                    <div class="bar-item">
+                        <span>2024</span>
+                        <div class="bar">
+                            <i style="height:63%"></i>
+                        </div>
+                        <strong>63%</strong>
+                    </div>
+
+                    <div class="bar-item">
+                        <span>2025</span>
+                        <div class="bar">
+                            <i style="height:68%"></i>
+                        </div>
+                        <strong>68%</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="insight-grid">
+
+                <div class="insight-card">
+                    <span>5-Year Average</span>
+                    <strong>60.2%</strong>
+                </div>
+
+                <div class="insight-card">
+                    <span>Latest Utilisation</span>
+                    <strong>68%</strong>
+                </div>
+
+                <div class="insight-card">
+                    <span>Admission Growth</span>
+                    <strong>+51.9%</strong>
+                </div>
+
+                <div class="insight-card warning">
+                    <span>Data Variance</span>
+                    <strong>Requires Review</strong>
+                </div>
+
+            </div>
+
+
+            <!-- Verification -->
+            <div class="verification-panel">
+
+                <div>
+                    <span class="verification-icon">✓</span>
+
+                    <div>
+                        <h3>University Portal Verification</h3>
+                        <p>
+                            College claimed:
+                            <strong>950 students</strong>
+                            &nbsp; | &nbsp;
+                            University verified:
+                            <strong>812 students</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <strong class="variance">
+                    Variance: 138
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PLACEMENT ================= -->
+        <section id="placement" class="section">
+
+            <div class="section-title">
+                <div>
+                    <span>03</span>
+                    <h2>Placement Intelligence</h2>
+                </div>
+
+                <p>Latest placement performance</p>
+            </div>
+
+
+            <div class="placement-grid">
+
+                <div class="placement-main">
+
+                    <div class="placement-number">
+                        <span>Placement Rate</span>
+                        <strong>72%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:72%"></div>
+                    </div>
+
+                    <p>
+                        292 of 400 eligible students placed
+                    </p>
+
+                </div>
+
+
+                <div class="package-card">
+                    <span>Highest Package</span>
+                    <strong>₹18L</strong>
+                    <small>2025</small>
+                </div>
+
+                <div class="package-card">
+                    <span>Average Package</span>
+                    <strong>₹5.2L</strong>
+                    <small>2025</small>
+                </div>
+
+                <div class="package-card">
+                    <span>Median Package</span>
+                    <strong>₹4.6L</strong>
+                    <small>2025</small>
+                </div>
+
+            </div>
+
+
+            <div class="recruiters">
+
+                <h3>Employer Intelligence</h3>
+
+                <div class="recruiter-list">
+                    <span>IT Services</span>
+                    <span>BFSI</span>
+                    <span>Core Engineering</span>
+                    <span>Consulting</span>
+                    <span>Technology</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ACCREDITATION ================= -->
+        <section id="accreditation" class="section">
+
+            <div class="section-title">
+                <div>
+                    <span>04</span>
+                    <h2>Ranking & Accreditation</h2>
+                </div>
+
+                <p>Institution recognition and accreditation history</p>
+            </div>
+
+
+            <div class="accreditation-grid">
+
+                <div class="accreditation-card">
+                    <span>UGC</span>
+                    <strong>✓</strong>
+                    <small>Recognised</small>
+                </div>
+
+                <div class="accreditation-card">
+                    <span>AICTE</span>
+                    <strong>✓</strong>
+                    <small>Approved</small>
+                </div>
+
+                <div class="accreditation-card">
+                    <span>NAAC</span>
+                    <strong>B++</strong>
+                    <small>Accredited</small>
+                </div>
+
+                <div class="accreditation-card">
+                    <span>NBA</span>
+                    <strong>✓</strong>
+                    <small>Verified</small>
+                </div>
+
+                <div class="accreditation-card">
+                    <span>NIRF</span>
+                    <strong>—</strong>
+                    <small>Not Ranked</small>
+                </div>
+
+            </div>
+
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <span>2022</span>
+                    <strong>Not Ranked</strong>
+                </div>
+
+                <div class="timeline-item">
+                    <span>2023</span>
+                    <strong>#184</strong>
+                </div>
+
+                <div class="timeline-item">
+                    <span>2024</span>
+                    <strong>#167</strong>
+                </div>
+
+                <div class="timeline-item">
+                    <span>2025</span>
+                    <strong>#151</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CAMPUS ================= -->
+        <section class="section">
+
+            <div class="section-title">
+                <div>
+                    <span>05</span>
+                    <h2>Campus Health</h2>
+                </div>
+
+                <p>Academic and infrastructure indicators</p>
+            </div>
+
+
+            <div class="campus-grid">
+
+                <div class="campus-card">
+                    <span>Students</span>
+                    <strong>3,120</strong>
+                </div>
+
+                <div class="campus-card">
+                    <span>Faculty</span>
+                    <strong>214</strong>
+                </div>
+
+                <div class="campus-card">
+                    <span>Faculty / Student</span>
+                    <strong>1 : 14.6</strong>
+                </div>
+
+                <div class="campus-card">
+                    <span>Pass Percentage</span>
+                    <strong>82%</strong>
+                </div>
+
+                <div class="campus-card">
+                    <span>Hostel Occupancy</span>
+                    <strong>74%</strong>
+                </div>
+
+                <div class="campus-card">
+                    <span>Campus Utilisation</span>
+                    <strong>65%</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= COMMERCIAL ================= -->
+        <section class="section">
+
+            <div class="section-title">
+                <div>
+                    <span>06</span>
+                    <h2>Commercial Intelligence</h2>
+                </div>
+
+                <p>Partnership opportunity indicators</p>
+            </div>
+
+
+            <div class="commercial-grid">
+
+                <div>
+                    <span>Addressable Students</span>
+                    <strong>2,400</strong>
+                </div>
+
+                <div>
+                    <span>Annual New Admissions</span>
+                    <strong>620</strong>
+                </div>
+
+                <div>
+                    <span>Average Fee</span>
+                    <strong>₹2.5L</strong>
+                </div>
+
+                <div>
+                    <span>Potential Gross Revenue</span>
+                    <strong>₹15.5 Cr</strong>
+                </div>
+
+            </div>
+
+
+            <div class="opportunity">
+
+                <div>
+                    <span>Commercial Opportunity</span>
+                    <h3>Requires Due Diligence</h3>
+                    <p>
+                        Opportunity assessment should be based on
+                        verified institutional and commercial data.
+                    </p>
+                </div>
+
+                <div class="opportunity-number">
+                    36%
+                    <small>Capacity Available</small>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= RISK ================= -->
+        <section id="risk" class="section">
+
+            <div class="section-title">
+                <div>
+                    <span>07</span>
+                    <h2>Risk & Red-Flag Centre</h2>
+                </div>
+
+                <p>Evidence-based institutional risk indicators</p>
+            </div>
+
+
+            <div class="risk-grid">
+
+                <div class="risk-card critical">
+                    <div>🔴</div>
+                    <h3>Critical</h3>
+                    <p>No critical issues identified in demo data.</p>
+                </div>
+
+                <div class="risk-card attention">
+                    <div>🟠</div>
+                    <h3>Attention</h3>
+                    <ul>
+                        <li>Admission data requires validation</li>
+                        <li>Placement source requires review</li>
+                        <li>Capacity utilisation below 70%</li>
+                    </ul>
+                </div>
+
+                <div class="risk-card verified-card">
+                    <div>🟢</div>
+                    <h3>Verified</h3>
+                    <ul>
+                        <li>UGC recognition</li>
+                        <li>AICTE approval</li>
+                        <li>University affiliation</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROMOTER ================= -->
+        <section class="section">
+
+            <div class="section-title">
+                <div>
+                    <span>08</span>
+                    <h2>Promoter & Management</h2>
+                </div>
+
+                <p>Due-diligence information</p>
+            </div>
+
+
+            <div class="promoter-card">
+
+                <div class="promoter-main">
+
+                    <div class="avatar">XY</div>
+
+                    <div>
+                        <span>Promoter / Trust</span>
+                        <h2>XYZ Educational Trust</h2>
+                        <p>Established 1998</p>
+                    </div>
+
+                </div>
+
+
+                <div class="management-grid">
+
+                    <div>
+                        <span>Other Institutions</span>
+                        <strong>4</strong>
+                    </div>
+
+                    <div>
+                        <span>Associated Organisations</span>
+                        <strong>7</strong>
+                    </div>
+
+                    <div>
+                        <span>Public Records</span>
+                        <strong>Review</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SOURCES ================= -->
+        <section class="section">
+
+            <div class="section-title">
+                <div>
+                    <span>09</span>
+                    <h2>Source & Verification Layer</h2>
+                </div>
+
+                <p>Every important number should have evidence</p>
+            </div>
+
+
+            <div class="source-table">
+
+                <div class="source-header">
+                    <span>Data Point</span>
+                    <span>Source</span>
+                    <span>Date</span>
+                    <span>Status</span>
+                </div>
+
+                <div class="source-row">
+                    <strong>Student Strength</strong>
+                    <span>AISHE</span>
+                    <span>23-Sep-2026</span>
+                    <b class="verified">✓ Verified</b>
+                </div>
+
+                <div class="source-row">
+                    <strong>Admissions</strong>
+                    <span>University Portal</span>
+                    <span>23-Sep-2026</span>
+                    <b class="verified">✓ Verified</b>
+                </div>
+
+                <div class="source-row">
+                    <strong>Placement</strong>
+                    <span>College Website</span>
+                    <span>20-Sep-2026</span>
+                    <b class="self-reported">⚠ Self-reported</b>
+                </div>
+
+                <div class="source-row">
+                    <strong>NAAC Grade</strong>
+                    <span>NAAC</span>
+                    <span>15-Sep-2026</span>
+                    <b class="verified">✓ Verified</b>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CEO VIEW ================= -->
+        <section class="ceo-view">
+
+            <div>
+                <span>EXECUTIVE BRIEF</span>
+                <h2>CEO View</h2>
+            </div>
+
+            <div class="ceo-grid">
+
+                <div>
+                    <span>Admissions</span>
+                    <strong>↗ Growing</strong>
+                </div>
+
+                <div>
+                    <span>Placements</span>
+                    <strong>→ Stable</strong>
+                </div>
+
+                <div>
+                    <span>Infrastructure</span>
+                    <strong>↗ Positive</strong>
+                </div>
+
+                <div>
+                    <span>Regulatory</span>
+                    <strong>✓ Verified</strong>
+                </div>
+
+            </div>
+
+            <button class="report-btn" onclick="generateReport()">
+                📄 Generate Executive Brief
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div>
+            <strong>IIP</strong>
+            <p>Institution Intelligence Platform</p>
+        </div>
+
+        <div>
+            Demo Frontend • Data shown is illustrative
+        </div>
+
+    </footer>
+
+
+    <!-- Our JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
